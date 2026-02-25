@@ -97,7 +97,7 @@ function updateDashboard() {
               return row[0] === platform.name; 
             }).length;
             var bgColor = rowIndex % 2 === 0 ? platform.color : '#FFFFFF';
-            dashboard.getRange(i + 3, 1, 1, headers.length).setBackground(bgColor); // i + 3 instead of i + 2
+            dashboard.getRange(i + 3, 1, 1, headers.length).setBackground(bgColor);
           }
         }
       });
@@ -106,7 +106,7 @@ function updateDashboard() {
       
       for (var i = 0; i < dashboardData.length; i++) {
         if (dashboardData[i][6] !== "None" && dashboardData[i][6] !== "") {
-          dashboard.getRange(i + 3, 7).setBackground('#F4CCCC').setFontWeight('bold'); // i + 3 instead of i + 2
+          dashboard.getRange(i + 3, 7).setBackground('#F4CCCC').setFontWeight('bold');
         }
       }
       
@@ -301,7 +301,7 @@ function fetchJsonAndPopulateSheet() {
   addTimestampToSheet(sheet);
   
   var headers = ["OS Version", "Update Name", "Product Version", "Release Date", "Security Info URL", "CVE Count", "Actively Exploited CVEs", "Days Since Previous Release"];
-  sheet.getRange(2, 1, 1, headers.length).setValues([headers]); // Row 2 instead of row 1
+  sheet.getRange(2, 1, 1, headers.length).setValues([headers]);
   sheet.setFrozenRows(2);
   
   try {
