@@ -1,4 +1,4 @@
-# Apple OS Security Updates Tracker
+# Apple OS Security Updates Tracker With SOFA
 
 A Google Apps Script that fetches and displays security update information for all Apple platforms in a Google Sheets dashboard.
 
